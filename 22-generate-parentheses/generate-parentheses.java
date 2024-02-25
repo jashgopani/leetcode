@@ -1,22 +1,27 @@
 class Solution {
-    public static String p = "()";
     public List<String> generateParenthesis(int n) {
-        Set<String> combinations = new HashSet<>();
-        combinations.add(p);
-        for(int i=1;i<n;i++){
-            combinations = generateNewCombinations(combinations);
-        }
-        return new ArrayList<>(combinations);
+        List<String> res = new ArrayList<>();
+        Stack<String> stack = new Stack<>();
+        generateCombinations(0,0,n,stack,res);
+        return res;
     }
 
-    public Set<String> generateNewCombinations(Set<String> oldCombinations){
-        Set<String> newCombinations = new HashSet<>();
-        for(String c: oldCombinations){
-            for(int i=0,j=c.length()-1;i<=j;i++,j--){
-                newCombinations.add(new StringBuilder(c).insert(i,p).toString());
-                newCombinations.add(new StringBuilder(c).insert(j,p).toString());
-            }
+    public void generateCombinations(int openCount, int closeCount,int n, Stack<String> stack,List<String> res){
+        if(openCount==closeCount && closeCount==n){
+            res.add(String.join("",stack));
+            return;
         }
-        return newCombinations;
+
+        if(openCount < n){
+            stack.push("(");
+            generateCombinations(openCount+1,closeCount,n,stack,res);
+            stack.pop();
+        }
+
+        if(closeCount < openCount){
+            stack.push(")");
+            generateCombinations(openCount,closeCount+1,n,stack,res);
+            stack.pop();
+        }
     }
 }
