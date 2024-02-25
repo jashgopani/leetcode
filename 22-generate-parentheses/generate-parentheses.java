@@ -12,8 +12,9 @@ class Solution {
     public Set<String> generateNewCombinations(Set<String> oldCombinations){
         Set<String> newCombinations = new HashSet<>();
         for(String c: oldCombinations){
-            for(int i=0;i<c.length();i++){
+            for(int i=0,j=c.length()-1;i<=j;i++,j--){
                 newCombinations.add(new StringBuilder(c).insert(i,p).toString());
+                newCombinations.add(new StringBuilder(c).insert(j,p).toString());
             }
         }
         return newCombinations;
