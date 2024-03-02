@@ -6,6 +6,8 @@ on:
 jobs:
     generate-readme:
         runs-on: ubuntu-latest
+        env:
+            TZ: America/New_York
         permissions: # Job-level permissions configuration starts here
             contents: write # 'write' access to repository contents
             pull-requests: write
