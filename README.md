@@ -4,6 +4,7 @@
 ## Index
 
 
+- [1-two-sum](./1-two-sum)
 - [22-generate-parentheses](./22-generate-parentheses)
 - [42-trapping-rain-water](./42-trapping-rain-water)
 - [49-group-anagrams](./49-group-anagrams)
@@ -18,4 +19,4 @@
 - [739-daily-temperatures](./739-daily-temperatures)
 - [1528-kids-with-the-greatest-number-of-candies](./1528-kids-with-the-greatest-number-of-candies)
 ---
-**Last Updated**: 2024-03-02 00:15:51
+**Last Updated**: 2024-03-02 02:48:13
