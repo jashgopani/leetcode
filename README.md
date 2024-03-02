@@ -1,2 +1,4 @@
-# leetcode
-My Leetcode submissions
+# LeetCode Submissions
+---
+## Index
+
