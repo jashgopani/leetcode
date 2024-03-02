@@ -39,7 +39,8 @@ jobs:
         run: |
           git config --local user.email "jbgopani@ncsu.edu"
           git config --local user.name "jashgopani"
-          git add README.md
+          git pull origin main
+          git add .
           git commit -m "Action: Generate README"
       - name: Push changes
         uses: ad-m/github-push-action@master
