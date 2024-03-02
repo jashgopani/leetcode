@@ -1,6 +1,6 @@
 class Solution {
     public String mergeAlternately(String word1, String word2) {
-        StringBuilder sb = new StringBuilder();
+        StringBuffer sb = new StringBuffer();
         int n = word1.length();
         int m = word2.length();
         String longer = n>m?word1:word2;
