@@ -19,5 +19,6 @@
 - [605-can-place-flowers](./605-can-place-flowers)
 - [739-daily-temperatures](./739-daily-temperatures)
 - [1528-kids-with-the-greatest-number-of-candies](./1528-kids-with-the-greatest-number-of-candies)
+- [1894-merge-strings-alternately](./1894-merge-strings-alternately)
 ---
-**Last Updated**: 2024-03-02 03:10:22
+**Last Updated**: 2024-03-02 17:27:38
