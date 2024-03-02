@@ -1,0 +1,41 @@
+name: Generate README
+
+on:
+  push:
+
+jobs:
+  generate-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Find and sort folders
+        run: |
+          # Find all folders and sort them by extracting the number from the start of the name
+          folders=$(find . -maxdepth 1 -type d -regex './[0-9]+-[^/]*' -printf "%f\n")
+          sorted_folders=$(echo "$folders" | sort -t '-' -k1n)
+
+      - name: Rewrite README
+        run: |
+          # Generate links for each folder
+          links=""
+          for folder in $sorted_folders; do
+              link="[${folder}](./${folder})"
+              links="$links\n- $link"
+          done
+
+          # Create new README content
+          readme_content="# LeetCode Submissions\n---\n## Index\n$links"
+
+          # Overwrite README.md with new content
+          echo -e "$readme_content" > README.md
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "jbgopani@ncsu.edu"
+          git config --local user.name "jashgopani"
+          git add README.md
+          git commit -m "Action: Generate README"
+          git push
