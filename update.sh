@@ -15,5 +15,5 @@ $links\n\
 ---\n"
 
 # Overwrite README.md with new content
-echo -e "$readme_content" > README.md
-echo "**Last Updated**: $(date +"%Y-%m-%d %H:%M:%S")" >> README.md
+printf "$readme_content" > README.md
+printf "**Last Updated**: $(date +"%Y-%m-%d %H:%M:%S")" >> README.md
