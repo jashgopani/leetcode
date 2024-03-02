@@ -1,4 +1,4 @@
--e # LeetCode Submissions
+# LeetCode Submissions
 
 ![Generate Readme Workflow](https://github.com/jashgopani/leetcode/actions/workflows/main.yml/badge.svg)
 ## Index
@@ -18,5 +18,4 @@
 - [739-daily-temperatures](./739-daily-temperatures)
 - [1528-kids-with-the-greatest-number-of-candies](./1528-kids-with-the-greatest-number-of-candies)
 ---
-
-**Last Updated**: 2024-03-02 05:00:04
+**Last Updated**: 2024-03-02 05:10:18
