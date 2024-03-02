@@ -3,7 +3,6 @@ class Solution {
         Set<Integer> history = new HashSet<>();
         int sum = squaredDigitSum(n);
         history.add(sum);
-        System.out.println(sum);
         while(true){
           sum=squaredDigitSum(sum);
           if(sum==1)
@@ -11,7 +10,6 @@ class Solution {
           else if(history.contains(sum))
             return false;
           history.add(sum);
-          System.out.println(sum);
         }
     }
 
