@@ -6,6 +6,7 @@
 
 - [1-two-sum](./1-two-sum)
 - [22-generate-parentheses](./22-generate-parentheses)
+- [36-valid-sudoku](./36-valid-sudoku)
 - [42-trapping-rain-water](./42-trapping-rain-water)
 - [49-group-anagrams](./49-group-anagrams)
 - [150-evaluate-reverse-polish-notation](./150-evaluate-reverse-polish-notation)
@@ -21,4 +22,4 @@
 - [1528-kids-with-the-greatest-number-of-candies](./1528-kids-with-the-greatest-number-of-candies)
 - [1894-merge-strings-alternately](./1894-merge-strings-alternately)
 ---
-**Last Updated**: 2024-03-02 17:35:26
+**Last Updated**: 2024-03-04 01:23:06
