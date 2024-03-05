@@ -29,7 +29,6 @@ class Solution {
           int m = mid2d[0];
           int n1 = mid2d[1];
           int val = mat[m][n1];
-          // System.out.printf("index=%d, decoded=%s, val=%d\n",mid1d,Arrays.toString(mid2d),val);
           if(val==target){
             return true;
           }else if(target < val){
