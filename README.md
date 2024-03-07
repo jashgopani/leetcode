@@ -10,6 +10,7 @@
 - [42-trapping-rain-water](./42-trapping-rain-water)
 - [49-group-anagrams](./49-group-anagrams)
 - [74-search-a-2d-matrix](./74-search-a-2d-matrix)
+- [128-longest-consecutive-sequence](./128-longest-consecutive-sequence)
 - [150-evaluate-reverse-polish-notation](./150-evaluate-reverse-polish-notation)
 - [155-min-stack](./155-min-stack)
 - [175-combine-two-tables](./175-combine-two-tables)
@@ -25,4 +26,4 @@
 - [1528-kids-with-the-greatest-number-of-candies](./1528-kids-with-the-greatest-number-of-candies)
 - [1894-merge-strings-alternately](./1894-merge-strings-alternately)
 ---
-**Last Updated**: 2024-03-06 20:31:18
+**Last Updated**: 2024-03-06 20:32:17
