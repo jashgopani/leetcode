@@ -15,7 +15,7 @@ class Solution {
         }else{
           left = k+1;
         }
-        System.out.println("New> left: "+left+" right: "+right+" Speed: "+speed+" k: "+k);
+        // System.out.println("New> left: "+left+" right: "+right+" Speed: "+speed+" k: "+k);
       }
 
       return speed;
@@ -27,14 +27,12 @@ class Solution {
 
     public long getEatingTime(double speed,int[] piles){
       long time = 0;
-      List<Integer> times = new ArrayList<>();
       for(int p:piles){
         int t = (int)Math.max(1,Math.ceil(p/speed)); 
         time+=t;
-        times.add(t);
       }
 
-      System.out.println("Current> Speed: "+speed+" Times: "+times+" Sum: "+time);
+      // System.out.println("Current> Speed: "+speed+" Times: "+times+" Sum: "+time);
       return time;
     }
 }
