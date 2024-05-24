@@ -19,11 +19,7 @@ class Solution {
 
       return speed;
     }
-
-    public boolean inRange(int x, int l, int r){
-      return x>=l && x<=r;
-    }
-
+    
     public long getEatingTime(double speed,int[] piles){
       long time = 0;
       for(int p:piles){
