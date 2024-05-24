@@ -15,7 +15,6 @@ class Solution {
         }else{
           left = k+1;
         }
-        // System.out.println("New> left: "+left+" right: "+right+" Speed: "+speed+" k: "+k);
       }
 
       return speed;
@@ -31,8 +30,6 @@ class Solution {
         int t = (int)Math.max(1,Math.ceil(p/speed)); 
         time+=t;
       }
-
-      // System.out.println("Current> Speed: "+speed+" Times: "+times+" Sum: "+time);
       return time;
     }
 }
