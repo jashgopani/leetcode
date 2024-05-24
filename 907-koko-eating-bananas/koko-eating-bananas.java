@@ -1,10 +1,13 @@
 class Solution {
     public int minEatingSpeed(int[] piles, int h) {
-      Arrays.sort(piles);
+      int max = Integer.MIN_VALUE;
+      for(int p:piles){
+        max = Math.max(p,max);
+      }
       int n = piles.length;
-      int left = 1, right = piles[n-1];
+      int left = 1, right = max;
       int k = left;
-      int speed = piles[n-1];
+      int speed = max;
 
       while(left<=right && k>0){
         k = ((left+right)/2);
@@ -19,7 +22,7 @@ class Solution {
 
       return speed;
     }
-    
+
     public long getEatingTime(double speed,int[] piles){
       long time = 0;
       for(int p:piles){
