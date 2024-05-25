@@ -14,6 +14,7 @@
 - [74-search-a-2d-matrix](./74-search-a-2d-matrix)
 - [128-longest-consecutive-sequence](./128-longest-consecutive-sequence)
 - [150-evaluate-reverse-polish-notation](./150-evaluate-reverse-polish-notation)
+- [153-find-minimum-in-rotated-sorted-array](./153-find-minimum-in-rotated-sorted-array)
 - [155-min-stack](./155-min-stack)
 - [175-combine-two-tables](./175-combine-two-tables)
 - [180-consecutive-numbers](./180-consecutive-numbers)
@@ -29,4 +30,4 @@
 - [1528-kids-with-the-greatest-number-of-candies](./1528-kids-with-the-greatest-number-of-candies)
 - [1894-merge-strings-alternately](./1894-merge-strings-alternately)
 ---
-**Last Updated**: 2024-05-24 22:16:03
+**Last Updated**: 2024-05-25 15:51:11
