@@ -8,6 +8,7 @@
 - [11-container-with-most-water](./11-container-with-most-water)
 - [15-3sum](./15-3sum)
 - [22-generate-parentheses](./22-generate-parentheses)
+- [33-search-in-rotated-sorted-array](./33-search-in-rotated-sorted-array)
 - [36-valid-sudoku](./36-valid-sudoku)
 - [42-trapping-rain-water](./42-trapping-rain-water)
 - [49-group-anagrams](./49-group-anagrams)
@@ -30,4 +31,4 @@
 - [1528-kids-with-the-greatest-number-of-candies](./1528-kids-with-the-greatest-number-of-candies)
 - [1894-merge-strings-alternately](./1894-merge-strings-alternately)
 ---
-**Last Updated**: 2024-05-25 15:53:51
+**Last Updated**: 2024-05-25 19:40:17
