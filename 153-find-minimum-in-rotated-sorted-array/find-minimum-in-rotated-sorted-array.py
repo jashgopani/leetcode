@@ -9,7 +9,7 @@ class Solution:
           
           mid = (l+r)//2
           res = min(nums[mid],res)
-          if(nums[mid]>=nums[l]):
+          if nums[mid] >= nums[l] :
             l = mid+1
           else:
             r = mid-1
