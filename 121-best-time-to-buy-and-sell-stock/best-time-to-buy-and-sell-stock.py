@@ -5,11 +5,10 @@ class Solution:
         while r < len(prices):
             buy = prices[l]
             sell = prices[r]
-            if(buy >= sell):
-                l=r
-            else:
+            if sell > buy:
                 res = max(res, sell-buy)
-            if r < len(prices):
-                r+=1
+            else:
+                l = r
+            r+=1
         return res
         
