@@ -5,6 +5,7 @@
 
 
 - [1-two-sum](./1-two-sum)
+- [3-longest-substring-without-repeating-characters](./3-longest-substring-without-repeating-characters)
 - [11-container-with-most-water](./11-container-with-most-water)
 - [15-3sum](./15-3sum)
 - [22-generate-parentheses](./22-generate-parentheses)
@@ -33,4 +34,4 @@
 - [1528-kids-with-the-greatest-number-of-candies](./1528-kids-with-the-greatest-number-of-candies)
 - [1894-merge-strings-alternately](./1894-merge-strings-alternately)
 ---
-**Last Updated**: 2024-05-30 03:04:28
+**Last Updated**: 2024-05-30 22:59:59
