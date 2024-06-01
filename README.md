@@ -26,6 +26,7 @@
 - [238-product-of-array-except-self](./238-product-of-array-except-self)
 - [242-valid-anagram](./242-valid-anagram)
 - [345-reverse-vowels-of-a-string](./345-reverse-vowels-of-a-string)
+- [567-permutation-in-string](./567-permutation-in-string)
 - [605-can-place-flowers](./605-can-place-flowers)
 - [739-daily-temperatures](./739-daily-temperatures)
 - [792-binary-search](./792-binary-search)
@@ -34,4 +35,4 @@
 - [1528-kids-with-the-greatest-number-of-candies](./1528-kids-with-the-greatest-number-of-candies)
 - [1894-merge-strings-alternately](./1894-merge-strings-alternately)
 ---
-**Last Updated**: 2024-05-30 23:47:20
+**Last Updated**: 2024-06-01 00:58:25
