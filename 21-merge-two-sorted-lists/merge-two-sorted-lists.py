@@ -10,26 +10,26 @@ class Solution:
 
         p,q = list1, list2
         res = None
-        if p.val <= q.val:
-            res = ListNode(p.val)
+        if p.val < q.val:
+            res = p
             p = p.next
         else:
-            res = ListNode(q.val)
+            res = q
             q = q.next
         r = res
-        # print(p.val,q.val,r.val)
         while p or q:
             if p and q:
-                r.next = ListNode(min(p.val,q.val))
-                r = r.next
-                if p.val <= q.val:
+                if p.val < q.val:
+                    r.next = p
                     p = p.next
                 else:
+                    r.next = q
                     q = q.next
+                r = r.next
             elif p and not q:
                 r.next = p
-                break
+                return res
             else:
                 r.next = q
-                break
+                return res
         return res
