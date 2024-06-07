@@ -26,6 +26,7 @@
 - [180-consecutive-numbers](./180-consecutive-numbers)
 - [202-happy-number](./202-happy-number)
 - [217-contains-duplicate](./217-contains-duplicate)
+- [226-invert-binary-tree](./226-invert-binary-tree)
 - [238-product-of-array-except-self](./238-product-of-array-except-self)
 - [242-valid-anagram](./242-valid-anagram)
 - [345-reverse-vowels-of-a-string](./345-reverse-vowels-of-a-string)
@@ -39,4 +40,4 @@
 - [1528-kids-with-the-greatest-number-of-candies](./1528-kids-with-the-greatest-number-of-candies)
 - [1894-merge-strings-alternately](./1894-merge-strings-alternately)
 ---
-**Last Updated**: 2024-06-06 23:10:05
+**Last Updated**: 2024-06-06 23:19:01
