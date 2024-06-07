@@ -17,6 +17,7 @@
 - [49-group-anagrams](./49-group-anagrams)
 - [74-search-a-2d-matrix](./74-search-a-2d-matrix)
 - [121-best-time-to-buy-and-sell-stock](./121-best-time-to-buy-and-sell-stock)
+- [125-valid-palindrome](./125-valid-palindrome)
 - [128-longest-consecutive-sequence](./128-longest-consecutive-sequence)
 - [150-evaluate-reverse-polish-notation](./150-evaluate-reverse-polish-notation)
 - [153-find-minimum-in-rotated-sorted-array](./153-find-minimum-in-rotated-sorted-array)
@@ -38,4 +39,4 @@
 - [1528-kids-with-the-greatest-number-of-candies](./1528-kids-with-the-greatest-number-of-candies)
 - [1894-merge-strings-alternately](./1894-merge-strings-alternately)
 ---
-**Last Updated**: 2024-06-05 20:59:22
+**Last Updated**: 2024-06-06 23:10:02
