@@ -1,6 +1,8 @@
 class Solution:
     def floodFill(self, image: List[List[int]], sr: int, sc: int, color: int) -> List[List[int]]:
-        return self.dfs(image,sr,sc,color) if image[sr][sc] != color else image
+        delRow = [-1,0,1,0]
+        delCol = [0,1,0,-1]
+        return self.dfsr(image,sr,sc,color,image[sr][sc],delRow,delCol) if image[sr][sc] != color else image
     
     def bfs(self, image: List[List[int]], sr: int, sc: int, color: int) -> List[List[int]]:
         target = image[sr][sc]
@@ -64,4 +66,16 @@ class Solution:
                     break
 
         return image
+    
+    def dfsr(self, image: List[List[int]], sr: int, sc: int, color: int, target: int, delRow: List[int], delCol: List[int]) -> List[List[int]]:
+        m,n = len(image), len(image[0])
+        image[sr][sc] = color
+        for i in range(0,4):
+            r = sr + delRow[i]
+            c = sc + delCol[i]
+            if r>=0 and r<m and c>=0 and c<n and image[r][c]==target:
+                self.dfsr(image,r,c,color,target,delRow,delCol)
+        return image
+
+        
         
