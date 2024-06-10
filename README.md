@@ -15,6 +15,7 @@
 - [36-valid-sudoku](./36-valid-sudoku)
 - [42-trapping-rain-water](./42-trapping-rain-water)
 - [49-group-anagrams](./49-group-anagrams)
+- [70-climbing-stairs](./70-climbing-stairs)
 - [74-search-a-2d-matrix](./74-search-a-2d-matrix)
 - [110-balanced-binary-tree](./110-balanced-binary-tree)
 - [121-best-time-to-buy-and-sell-stock](./121-best-time-to-buy-and-sell-stock)
@@ -47,4 +48,4 @@
 - [1528-kids-with-the-greatest-number-of-candies](./1528-kids-with-the-greatest-number-of-candies)
 - [1894-merge-strings-alternately](./1894-merge-strings-alternately)
 ---
-**Last Updated**: 2024-06-10 18:23:27
+**Last Updated**: 2024-06-10 19:33:02
