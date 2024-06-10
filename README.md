@@ -35,6 +35,7 @@
 - [242-valid-anagram](./242-valid-anagram)
 - [278-first-bad-version](./278-first-bad-version)
 - [345-reverse-vowels-of-a-string](./345-reverse-vowels-of-a-string)
+- [383-ransom-note](./383-ransom-note)
 - [424-longest-repeating-character-replacement](./424-longest-repeating-character-replacement)
 - [567-permutation-in-string](./567-permutation-in-string)
 - [605-can-place-flowers](./605-can-place-flowers)
@@ -46,4 +47,4 @@
 - [1528-kids-with-the-greatest-number-of-candies](./1528-kids-with-the-greatest-number-of-candies)
 - [1894-merge-strings-alternately](./1894-merge-strings-alternately)
 ---
-**Last Updated**: 2024-06-10 18:06:45
+**Last Updated**: 2024-06-10 18:18:50
