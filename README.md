@@ -28,6 +28,7 @@
 - [175-combine-two-tables](./175-combine-two-tables)
 - [180-consecutive-numbers](./180-consecutive-numbers)
 - [202-happy-number](./202-happy-number)
+- [206-reverse-linked-list](./206-reverse-linked-list)
 - [217-contains-duplicate](./217-contains-duplicate)
 - [226-invert-binary-tree](./226-invert-binary-tree)
 - [232-implement-queue-using-stacks](./232-implement-queue-using-stacks)
@@ -49,4 +50,4 @@
 - [1528-kids-with-the-greatest-number-of-candies](./1528-kids-with-the-greatest-number-of-candies)
 - [1894-merge-strings-alternately](./1894-merge-strings-alternately)
 ---
-**Last Updated**: 2024-06-11 15:15:45
+**Last Updated**: 2024-06-11 15:28:52
