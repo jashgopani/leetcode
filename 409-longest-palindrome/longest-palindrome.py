@@ -5,7 +5,10 @@ class Solution:
         for c in s:
             counter[c] = counter.get(c,0)+1
             odd += (1 if counter[c]%2==1 else -1)
-        return len(s) - max(0, odd-1)
+        if odd > 0:
+            return len(s) - odd + 1
+        
+        return len(s)
             
         
                 
