@@ -9,9 +9,7 @@ class Solution:
                 evenCount += (f-1)
                 oddCount += 1
 
-        res = evenCount
-        res += (1 if oddCount >= 1 else 0)
-        return res
+        return evenCount + min(oddCount,1)
         
                 
         
