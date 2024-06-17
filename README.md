@@ -15,6 +15,7 @@
 - [36-valid-sudoku](./36-valid-sudoku)
 - [42-trapping-rain-water](./42-trapping-rain-water)
 - [49-group-anagrams](./49-group-anagrams)
+- [67-add-binary](./67-add-binary)
 - [70-climbing-stairs](./70-climbing-stairs)
 - [74-search-a-2d-matrix](./74-search-a-2d-matrix)
 - [110-balanced-binary-tree](./110-balanced-binary-tree)
@@ -51,4 +52,4 @@
 - [1528-kids-with-the-greatest-number-of-candies](./1528-kids-with-the-greatest-number-of-candies)
 - [1894-merge-strings-alternately](./1894-merge-strings-alternately)
 ---
-**Last Updated**: 2024-06-12 20:34:12
+**Last Updated**: 2024-06-17 19:20:34
