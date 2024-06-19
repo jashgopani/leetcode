@@ -16,7 +16,7 @@ class Solution {
                 sum+= (b.charAt(ib) - '0');
                 ib--;
             }
-            print("len:",len,"sum:",sum);
+            // print("len:",len,"sum:",sum);
             len--;
             switch(sum){
                 case 1:
