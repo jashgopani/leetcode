@@ -1,17 +1,34 @@
 class Solution:
     def addBinary(self, a: str, b: str) -> str:
-        op1, op2 = 0, 0
-        for d in a:
-            op1 = op1*2 + int(d)
-        
-        for d in b:
-            op2 = op2*2 + int(d)
-        
-        ans = op1+op2
+        ia, ib = len(a)-1, len(b)-1
+        c = 0
+
         res = ""
-        while ans > 0:
-            res = str(ans % 2) + res
-            ans = ans // 2
-        return res if res else "0"
+        while ia>=0 or ib>=0:
+            s = c
+            if ia>=0:
+                s+= (ord(a[ia]) - ord('0'))
+                ia -= 1
+            
+            if ib>=0:
+                s+= (ord(b[ib]) - ord('0'))
+                ib -= 1
+            
+            if s == 0:
+                res = "0"+res
+                c = 0
+            elif s==1:
+                res = "1"+res
+                c = 0
+            elif s==2:
+                res = "0"+res
+                c = 1
+            elif s==3:
+                res = "1"+res
+                c = 1
+            
+        if c==1 or len(res)==0:
+            res = str(c) + res
+        return res
             
         
