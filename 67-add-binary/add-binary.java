@@ -19,6 +19,10 @@ class Solution {
             // print("len:",len,"sum:",sum);
             len--;
             switch(sum){
+                case 0:
+                    c = 0;
+                    sb.insert(0,0);
+                    break;
                 case 1:
                     sb.insert(0,1);
                     c=0;
@@ -31,9 +35,6 @@ class Solution {
                     sb.insert(0,1);
                     c=1;
                     break;
-                default://case 0
-                    c = 0;
-                    sb.insert(0,0);
             }
         }
         if(c==1 || sb.length()==0)
