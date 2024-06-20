@@ -42,6 +42,7 @@
 - [383-ransom-note](./383-ransom-note)
 - [409-longest-palindrome](./409-longest-palindrome)
 - [424-longest-repeating-character-replacement](./424-longest-repeating-character-replacement)
+- [543-diameter-of-binary-tree](./543-diameter-of-binary-tree)
 - [567-permutation-in-string](./567-permutation-in-string)
 - [605-can-place-flowers](./605-can-place-flowers)
 - [733-flood-fill](./733-flood-fill)
@@ -52,4 +53,4 @@
 - [1528-kids-with-the-greatest-number-of-candies](./1528-kids-with-the-greatest-number-of-candies)
 - [1894-merge-strings-alternately](./1894-merge-strings-alternately)
 ---
-**Last Updated**: 2024-06-18 23:35:41
+**Last Updated**: 2024-06-20 00:02:50
