@@ -18,6 +18,7 @@
 - [67-add-binary](./67-add-binary)
 - [70-climbing-stairs](./70-climbing-stairs)
 - [74-search-a-2d-matrix](./74-search-a-2d-matrix)
+- [104-maximum-depth-of-binary-tree](./104-maximum-depth-of-binary-tree)
 - [110-balanced-binary-tree](./110-balanced-binary-tree)
 - [121-best-time-to-buy-and-sell-stock](./121-best-time-to-buy-and-sell-stock)
 - [125-valid-palindrome](./125-valid-palindrome)
@@ -54,4 +55,4 @@
 - [1528-kids-with-the-greatest-number-of-candies](./1528-kids-with-the-greatest-number-of-candies)
 - [1894-merge-strings-alternately](./1894-merge-strings-alternately)
 ---
-**Last Updated**: 2024-06-20 23:42:58
+**Last Updated**: 2024-06-20 23:49:33
