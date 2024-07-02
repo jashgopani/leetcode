@@ -54,8 +54,9 @@
 - [792-binary-search](./792-binary-search)
 - [907-koko-eating-bananas](./907-koko-eating-bananas)
 - [908-middle-of-the-linked-list](./908-middle-of-the-linked-list)
+- [1014-k-closest-points-to-origin](./1014-k-closest-points-to-origin)
 - [1023-time-based-key-value-store](./1023-time-based-key-value-store)
 - [1528-kids-with-the-greatest-number-of-candies](./1528-kids-with-the-greatest-number-of-candies)
 - [1894-merge-strings-alternately](./1894-merge-strings-alternately)
 ---
-**Last Updated**: 2024-06-29 23:51:41
+**Last Updated**: 2024-07-01 21:19:53
