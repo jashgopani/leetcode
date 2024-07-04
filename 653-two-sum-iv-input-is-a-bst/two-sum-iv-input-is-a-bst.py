@@ -17,7 +17,6 @@ class Solution:
                     inorder(r.right)
         
         inorder(root)
-        print(nums)
         l, r = 0, len(nums)-1
         while l<r:
             twoSum = nums[l]+nums[r]
