@@ -11,12 +11,8 @@ class BSTIterator:
         self.pushAll(root)
     
     def next(self):
-        if not self.hasNext(): return None
         curr = self.stack.pop()
-        if self.reverse and curr.left:
-            self.pushAll(curr.left)
-        elif not self.reverse and curr.right:
-            self.pushAll(curr.right)
+        self.pushAll(curr.left if self.reverse else curr.right)
         return curr.val
     
     def hasNext(self):
@@ -34,8 +30,7 @@ class Solution:
     def findTarget(self, root: Optional[TreeNode], k: int) -> bool:
         l, r = BSTIterator(root), BSTIterator(root,True)
         left, right = l.next(), r.next()
-        while left is not None and right is not None and left!=right:
-            # print(left,right)
+        while left < right:
             twoSum = left + right
             if twoSum == k:
                 return True
