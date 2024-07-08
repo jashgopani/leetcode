@@ -14,34 +14,24 @@
  * }
  */
 class Solution {
-    class NodePair{
-        int level;
-        TreeNode node;
-
-        NodePair(int level, TreeNode node){
-            this.level = level;
-            this.node = node;
-        }
-    }
+    
     public List<List<Integer>> levelOrder(TreeNode root) {
-        Queue<NodePair> q = new LinkedList<>();
+        Deque<TreeNode> q = new LinkedList<>();
         List<List<Integer>> res = new ArrayList<>();
-        if (null==root) return res;
-
-        q.add(new NodePair(0,root));
-        while(null!=q.peek()){
-            NodePair curr = q.poll();
-
-            if(res.size()==curr.level)res.add(new ArrayList<>());
-
-            res.get(curr.level).add(curr.node.val);
-
-            if (null!=curr.node.left){
-                q.add(new NodePair(curr.level+1,curr.node.left));
+        q.add(root);
+        while(q.size()>0){
+            List<Integer> level = new ArrayList<>();
+            int n = q.size();
+            for(int i=0;i<n;i++){
+                TreeNode node = q.poll();
+                if (null!=node){
+                    level.add(node.val);
+                    q.add(node.left); 
+                    q.add(node.right); 
+                }
             }
-
-            if (null!=curr.node.right){
-                q.add(new NodePair(curr.level+1,curr.node.right));
+            if (level.size()>0){
+                res.add(level);
             }
         }
 
