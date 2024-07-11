@@ -12,15 +12,16 @@ class Solution:
         clones = dict()
 
         def clone(node):
-            copy = None
-            if node:
-                if node.val not in clones:
-                    copy = Node(node.val)
-                    clones[node.val] = copy
-                    for n in node.neighbors:
-                        copy.neighbors.append(clone(n))
-                else:
-                    copy = clones[node.val]
+            if not node: return None
+
+            if node in clones:
+                return clones[node]
+            
+            copy = Node(node.val)
+            clones[node] = copy
+            for n in node.neighbors:
+                copy.neighbors.append(clone(n))
             return copy
+        
         return clone(root)
                     
