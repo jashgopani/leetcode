@@ -58,6 +58,7 @@
 - [733-flood-fill](./733-flood-fill)
 - [739-daily-temperatures](./739-daily-temperatures)
 - [792-binary-search](./792-binary-search)
+- [874-backspace-string-compare](./874-backspace-string-compare)
 - [907-koko-eating-bananas](./907-koko-eating-bananas)
 - [908-middle-of-the-linked-list](./908-middle-of-the-linked-list)
 - [1014-k-closest-points-to-origin](./1014-k-closest-points-to-origin)
@@ -65,4 +66,4 @@
 - [1528-kids-with-the-greatest-number-of-candies](./1528-kids-with-the-greatest-number-of-candies)
 - [1894-merge-strings-alternately](./1894-merge-strings-alternately)
 ---
-**Last Updated**: 2024-07-11 00:37:57
+**Last Updated**: 2024-07-13 21:10:24
