@@ -21,13 +21,14 @@ class Solution:
             return True
         res = []
         for i in range(numCourses):
-            if not dfs(i): return []
-            adj[i]=[]
-            while stack:
-                course = stack.pop()
-                if not checked[course]:
-                    res.append(course)
-                    checked[course]=True
+            if not checked[i]:
+                if not dfs(i): return []
+                adj[i]=[]
+                while stack:
+                    course = stack.pop()
+                    if not checked[course]:
+                        checked[course]=True
+                        res.append(course)
         
         return res
         
