@@ -20,9 +20,7 @@ class Trie:
     def search(self, word: str) -> bool:
         temp = self.root
         for c in word:
-            if temp:
-                if not temp.children.get(c):
-                    return False
+            if temp and temp.children.get(c):
                 temp = temp.children[c]
             else:
                 return False
@@ -32,9 +30,7 @@ class Trie:
     def startsWith(self, prefix: str) -> bool:
         temp = self.root
         for c in prefix:
-            if temp:
-                if not temp.children.get(c):
-                    return False
+            if temp and temp.children.get(c):
                 temp = temp.children[c]
             else:
                 return False
