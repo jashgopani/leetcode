@@ -18,7 +18,6 @@ class Trie:
         temp.count += 1
 
     def search(self, word: str) -> bool:
-        print('search query:',word)
         temp = self.root
         for c in word:
             if temp:
