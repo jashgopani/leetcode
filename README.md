@@ -48,6 +48,7 @@
 - [238-product-of-array-except-self](./238-product-of-array-except-self)
 - [242-valid-anagram](./242-valid-anagram)
 - [278-first-bad-version](./278-first-bad-version)
+- [322-coin-change](./322-coin-change)
 - [345-reverse-vowels-of-a-string](./345-reverse-vowels-of-a-string)
 - [383-ransom-note](./383-ransom-note)
 - [409-longest-palindrome](./409-longest-palindrome)
@@ -69,4 +70,4 @@
 - [1894-merge-strings-alternately](./1894-merge-strings-alternately)
 - [3309-count-prefix-and-suffix-pairs-i](./3309-count-prefix-and-suffix-pairs-i)
 ---
-**Last Updated**: 2024-07-20 20:43:08
+**Last Updated**: 2024-07-20 21:09:17
