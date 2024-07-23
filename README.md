@@ -21,6 +21,7 @@
 - [70-climbing-stairs](./70-climbing-stairs)
 - [74-search-a-2d-matrix](./74-search-a-2d-matrix)
 - [94-binary-tree-inorder-traversal](./94-binary-tree-inorder-traversal)
+- [98-validate-binary-search-tree](./98-validate-binary-search-tree)
 - [102-binary-tree-level-order-traversal](./102-binary-tree-level-order-traversal)
 - [104-maximum-depth-of-binary-tree](./104-maximum-depth-of-binary-tree)
 - [110-balanced-binary-tree](./110-balanced-binary-tree)
@@ -70,4 +71,4 @@
 - [1894-merge-strings-alternately](./1894-merge-strings-alternately)
 - [3309-count-prefix-and-suffix-pairs-i](./3309-count-prefix-and-suffix-pairs-i)
 ---
-**Last Updated**: 2024-07-22 23:59:12
+**Last Updated**: 2024-07-23 00:19:36
