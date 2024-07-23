@@ -6,7 +6,7 @@ class MinStack:
         
     def push(self, val: int) -> None:
         self.stack.append(val)
-        currMin = self.minStack[-1] if self.minStack else sys.maxsize
+        currMin = self.minStack[-1] if self.minStack else val
         self.minStack.append(min(currMin,val))
 
     def pop(self) -> None:
