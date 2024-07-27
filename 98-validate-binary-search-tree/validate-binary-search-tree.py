@@ -7,20 +7,13 @@
 class Solution:
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
         
-        def inorder(root, res):
-            if not root: return res
+        def valid(node, left, right):
+            if not node: return True
+            if not (node.val > left and node.val < right): return False
 
-            res = inorder(root.left, res)
-            res.append(root.val)
-            res = inorder(root.right,res)
-
-            return res
+            return (valid(node.left,left,node.val) and valid(node.right,node.val, right))
         
-        tree = inorder(root,[])
-        for i in range(len(tree)-1):
-            if tree[i]>=tree[i+1]:return False
-        
-        return True
+        return valid(root,float("-inf"),float("inf"))
 
 
         
