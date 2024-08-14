@@ -11,9 +11,6 @@ class Solution {
     }
 
     public int romanToInt(String s) {
-        return tokenize(s);
-    }
-    public int tokenize(String s) {
         int num = 0;
         int prev = 0;
 
