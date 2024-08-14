@@ -1,40 +1,40 @@
 class Solution {
-    public int romanToInt(String inputString) {
-        Map<Character,Integer> mapping = new HashMap<>();
-        mapping.put('I',1);
-        mapping.put('V',5);
-        mapping.put('X',10);
-        mapping.put('L',50);
-        mapping.put('C',100);
-        mapping.put('D',500);
-        mapping.put('M',1000);
+    public int romanToInt(String s) {
+        return tokenize(s);
+    }
+    public int tokenize(String s) {
+        int num = 0;
+        int prev = 0;
 
-        int res=0;
-        char s[] = inputString.toCharArray();
-        boolean skipNext=false;
-        for (int i=0;i<s.length;i++){
-            boolean isNotLast = i < (s.length - 1);
-            char c = s[i];
+        for (int i = 0; i < s.length(); i++) {
+            int current = tokens(s.charAt(i));
             
-            if(skipNext){
-                skipNext = false;
+            if (prev < current) {
+                num += current - (2 * prev);
+            } else {
+                num += current;
             }
-
-            if (c=='I' && isNotLast && (s[i+1]=='V' || s[i+1]=='X')){
-                res += (mapping.get(s[i+1])-mapping.get(c));
-                skipNext = true;
-            }else if(c=='X' && isNotLast && (s[i+1]=='L' || s[i+1]=='C')){
-                res += (mapping.get(s[i+1])-mapping.get(c));
-                skipNext = true;
-            }else if (c=='C' && isNotLast && (s[i+1]=='D' || s[i+1]=='M')){
-                res += (mapping.get(s[i+1])-mapping.get(c));
-                skipNext = true;
-            }else{
-                res += mapping.get(c);
-            }
-
-            if (skipNext) i++;
+            prev = current;
         }
-        return res;
+        return num;
+    }
+    public int tokens(char c) {
+        switch(c) {
+            case 'I':
+                return 1;
+            case 'V':
+                return 5;
+            case 'X':
+                return 10;
+            case 'L':
+                return 50;
+            case 'C':
+                return 100;
+            case 'D':
+                return 500;
+            case 'M':
+                return 1000;
+        }
+        return 0;
     }
 }
