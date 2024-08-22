@@ -17,6 +17,7 @@
 - [42-trapping-rain-water](./42-trapping-rain-water)
 - [49-group-anagrams](./49-group-anagrams)
 - [53-maximum-subarray](./53-maximum-subarray)
+- [56-merge-intervals](./56-merge-intervals)
 - [57-insert-interval](./57-insert-interval)
 - [67-add-binary](./67-add-binary)
 - [70-climbing-stairs](./70-climbing-stairs)
@@ -74,4 +75,4 @@
 - [1894-merge-strings-alternately](./1894-merge-strings-alternately)
 - [3309-count-prefix-and-suffix-pairs-i](./3309-count-prefix-and-suffix-pairs-i)
 ---
-**Last Updated**: 2024-08-14 18:46:02
+**Last Updated**: 2024-08-22 16:51:18
