@@ -1,30 +1,30 @@
 class Solution {
     public int[][] merge(int[][] intervals) {
-        int[][] sortedIntervals = new int[intervals.length][];
-        for (int i=0;i<intervals.length;i++){
-            sortedIntervals[i] = Arrays.copyOf(intervals[i],intervals[i].length);
+        if (intervals == null || intervals.length == 0) {
+            return new int[0][];
         }
-        Arrays.sort(sortedIntervals,(a,b)->Integer.compare(a[0],b[0]));
-        
-        List<int[]> res = new ArrayList<>();
-        int[] prev = sortedIntervals[0];
 
-        for(int i=1;i<sortedIntervals.length;i++){
-            int[] curr = sortedIntervals[i];
-            if (curr[1] < prev[0]){
-                res.add(Arrays.copyOf(curr,curr.length));
-            }else if(curr[0] > prev[1]){
-                res.add(Arrays.copyOf(prev,prev.length));
+        // Sort the intervals by the starting time
+        Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
+
+        List<int[]> res = new ArrayList<>();
+        int[] prev = intervals[0];
+
+        for (int i = 1; i < intervals.length; i++) {
+            int[] curr = intervals[i];
+            if (curr[0] <= prev[1]) {
+                // Overlapping intervals, merge them
+                prev[1] = Math.max(prev[1], curr[1]);
+            } else {
+                // Non-overlapping interval, add the previous interval and update prev
+                res.add(prev);
                 prev = curr;
-            }else{
-                prev = new int[]{Math.min(curr[0],prev[0]), Math.max(curr[1],prev[1])};
             }
         }
-        res.add(Arrays.copyOf(prev,prev.length));
-        int [][] ans = new int[res.size()][];
-        for(int i=0;i<res.size();i++){
-            ans[i]=res.get(i);
-        }
-        return ans;
+        // Add the last interval
+        res.add(prev);
+
+        // Convert the list to a 2D array and return
+        return res.toArray(new int[res.size()][]);
     }
 }
