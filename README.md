@@ -67,6 +67,7 @@
 - [739-daily-temperatures](./739-daily-temperatures)
 - [792-binary-search](./792-binary-search)
 - [874-backspace-string-compare](./874-backspace-string-compare)
+- [906-walking-robot-simulation](./906-walking-robot-simulation)
 - [907-koko-eating-bananas](./907-koko-eating-bananas)
 - [908-middle-of-the-linked-list](./908-middle-of-the-linked-list)
 - [1014-k-closest-points-to-origin](./1014-k-closest-points-to-origin)
@@ -76,4 +77,4 @@
 - [1894-merge-strings-alternately](./1894-merge-strings-alternately)
 - [3309-count-prefix-and-suffix-pairs-i](./3309-count-prefix-and-suffix-pairs-i)
 ---
-**Last Updated**: 2024-09-03 23:28:01
+**Last Updated**: 2024-09-04 00:21:39
