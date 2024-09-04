@@ -12,6 +12,7 @@
 - [20-valid-parentheses](./20-valid-parentheses)
 - [21-merge-two-sorted-lists](./21-merge-two-sorted-lists)
 - [22-generate-parentheses](./22-generate-parentheses)
+- [26-remove-duplicates-from-sorted-array](./26-remove-duplicates-from-sorted-array)
 - [27-remove-element](./27-remove-element)
 - [33-search-in-rotated-sorted-array](./33-search-in-rotated-sorted-array)
 - [36-valid-sudoku](./36-valid-sudoku)
@@ -78,4 +79,4 @@
 - [1894-merge-strings-alternately](./1894-merge-strings-alternately)
 - [3309-count-prefix-and-suffix-pairs-i](./3309-count-prefix-and-suffix-pairs-i)
 ---
-**Last Updated**: 2024-09-04 08:58:47
+**Last Updated**: 2024-09-04 09:27:44
