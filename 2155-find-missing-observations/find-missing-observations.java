@@ -9,6 +9,9 @@ class Solution {
         int leftSum = targetSum - msum;
 
         int[] res = new int[n];
+        if ((leftSum / 6) > n){
+            return new int[]{};
+        }
         for (int i=0;i<n;i++){
             int q = leftSum / (n-i);
             int r = leftSum % (n-i);
