@@ -79,5 +79,6 @@
 - [1894-merge-strings-alternately](./1894-merge-strings-alternately)
 - [2155-find-missing-observations](./2155-find-missing-observations)
 - [3309-count-prefix-and-suffix-pairs-i](./3309-count-prefix-and-suffix-pairs-i)
+- [3501-delete-nodes-from-linked-list-present-in-array](./3501-delete-nodes-from-linked-list-present-in-array)
 ---
-**Last Updated**: 2024-09-05 01:32:42
+**Last Updated**: 2024-09-06 23:24:01
