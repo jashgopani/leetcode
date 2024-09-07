@@ -14,7 +14,7 @@ class Solution:
         temp = head
         while temp:
             while temp.next and temp.next.val in numSet:
-                temp.next = temp.next.next if temp.next.next else None
+                temp.next = temp.next.next
             temp = temp.next
 
         return head
