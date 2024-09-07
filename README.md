@@ -75,10 +75,11 @@
 - [1014-k-closest-points-to-origin](./1014-k-closest-points-to-origin)
 - [1023-time-based-key-value-store](./1023-time-based-key-value-store)
 - [1036-rotting-oranges](./1036-rotting-oranges)
+- [1484-linked-list-in-binary-tree](./1484-linked-list-in-binary-tree)
 - [1528-kids-with-the-greatest-number-of-candies](./1528-kids-with-the-greatest-number-of-candies)
 - [1894-merge-strings-alternately](./1894-merge-strings-alternately)
 - [2155-find-missing-observations](./2155-find-missing-observations)
 - [3309-count-prefix-and-suffix-pairs-i](./3309-count-prefix-and-suffix-pairs-i)
 - [3501-delete-nodes-from-linked-list-present-in-array](./3501-delete-nodes-from-linked-list-present-in-array)
 ---
-**Last Updated**: 2024-09-06 23:40:21
+**Last Updated**: 2024-09-07 12:22:10
