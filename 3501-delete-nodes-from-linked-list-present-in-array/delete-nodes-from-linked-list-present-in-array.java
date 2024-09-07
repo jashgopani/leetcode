@@ -10,15 +10,18 @@
  */
 class Solution {
     public ListNode modifiedList(int[] nums, ListNode head) {
-        Arrays.sort(nums);
+        Set<Integer> numSet = new HashSet<>();
+        for (int n:nums){
+            numSet.add(n);
+        }
 
-        while (null!=head && Arrays.binarySearch(nums,head.val)>=0){
+        while (null!=head && numSet.contains(head.val)){
             head = head.next;
         }
 
         ListNode temp = head;
         while (null!=temp){
-            while (null!=temp.next && Arrays.binarySearch(nums,temp.next.val)>=0){
+            while (null!=temp.next && numSet.contains(temp.next.val)){
                 temp.next = temp.next.next;
             }
             temp = temp.next;
