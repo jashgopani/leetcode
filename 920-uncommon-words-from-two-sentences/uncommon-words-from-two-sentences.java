@@ -15,10 +15,7 @@ class Solution {
                 res.add(e.getKey());
             }
         }
-        String[] uncommonWords = new String[res.size()];
-        for (int i=0;i<res.size();i++){
-            uncommonWords[i]=res.get(i);
-        }
-        return uncommonWords;
+        
+        return res.toArray(new String[0]);
     }
 }
