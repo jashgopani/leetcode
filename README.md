@@ -79,9 +79,10 @@
 - [1484-linked-list-in-binary-tree](./1484-linked-list-in-binary-tree)
 - [1528-kids-with-the-greatest-number-of-candies](./1528-kids-with-the-greatest-number-of-candies)
 - [1894-merge-strings-alternately](./1894-merge-strings-alternately)
+- [1927-maximum-ascending-subarray-sum](./1927-maximum-ascending-subarray-sum)
 - [2155-find-missing-observations](./2155-find-missing-observations)
 - [2903-insert-greatest-common-divisors-in-linked-list](./2903-insert-greatest-common-divisors-in-linked-list)
 - [3309-count-prefix-and-suffix-pairs-i](./3309-count-prefix-and-suffix-pairs-i)
 - [3501-delete-nodes-from-linked-list-present-in-array](./3501-delete-nodes-from-linked-list-present-in-array)
 ---
-**Last Updated**: 2024-09-16 23:46:35
+**Last Updated**: 2025-02-04 17:51:17
