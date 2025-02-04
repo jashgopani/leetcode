@@ -9,6 +9,6 @@ class Solution:
                 sum=0
             r+=1
             sum += nums[r]
-            ans = max([ans, nums[r], sum])
+            ans = max(ans, nums[r], sum)
         return ans
         
