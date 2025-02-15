@@ -1,6 +1,5 @@
 class Solution {
     public int[] topKFrequent(int[] nums, int k) {
-        PriorityQueue<int[]> pq = new PriorityQueue<>((a,b)->Integer.compare(b[0],a[0]));//max heap that's why b first
         Map<Integer,Integer> freq = new HashMap<>();
         int maxFreq = 0;
         for(int i:nums){
@@ -18,7 +17,6 @@ class Solution {
         for(Map.Entry<Integer,Integer> e: freq.entrySet()){
             int f = e.getValue();
             int num = e.getKey();
-
             if(bucket[f]==null) bucket[f] = new ArrayList<Integer>();
 
             bucket[f].add(num);
@@ -32,6 +30,8 @@ class Solution {
                     if(c < k)
                         ans[c++] = n;
                 }
+
+                if(c==k) break;
             }
         }
         return ans;
