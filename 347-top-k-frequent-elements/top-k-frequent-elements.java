@@ -1,39 +1,45 @@
 class Solution {
     public int[] topKFrequent(int[] nums, int k) {
-        Map<Integer,Integer> freq = new HashMap<>();
-        int maxFreq = 0;
-        for(int i:nums){
-            if(freq.containsKey(i)){
-                int currFreq = freq.get(i)+1;
-                freq.put(i,currFreq);
-                maxFreq = Math.max(maxFreq,currFreq);
-            }else{
-                freq.put(i,1);
-                maxFreq = Math.max(maxFreq,1);
+        // Step 1: Count the frequency of each number
+        Map<Integer, Integer> frequencyMap = new HashMap<>();
+        int maxFrequency = 0;
+
+        for (int num : nums) {
+            int frequency = frequencyMap.getOrDefault(num, 0) + 1;
+            frequencyMap.put(num, frequency);
+            maxFrequency = Math.max(maxFrequency, frequency);
+        }
+
+        // Step 2: Create buckets where index represents frequency
+        List<Integer>[] buckets = new ArrayList[maxFrequency + 1];
+
+        // Step 3: Put numbers in their frequency buckets
+        for (Map.Entry<Integer, Integer> entry : frequencyMap.entrySet()) {
+            int number = entry.getKey();
+            int frequency = entry.getValue();
+
+            if (buckets[frequency] == null) {
+            buckets[frequency] = new ArrayList<>();
             }
+            buckets[frequency].add(number);
         }
 
-        ArrayList[] bucket = new ArrayList[maxFreq+1];
-        for(Map.Entry<Integer,Integer> e: freq.entrySet()){
-            int f = e.getValue();
-            int num = e.getKey();
-            if(bucket[f]==null) bucket[f] = new ArrayList<Integer>();
+        // Step 4: Collect top k frequent elements
+        int[] result = new int[k];
+        int index = 0;
 
-            bucket[f].add(num);
-        }
-        
-        
-        int[] ans = new int[k];
-        for(int i=maxFreq, c=0;i>=0 || c<k;i--){
-            if(bucket[i]!=null){
-                for(int n:(ArrayList<Integer>)bucket[i]){
-                    if(c < k)
-                        ans[c++] = n;
+        for (int freq = maxFrequency; freq >= 0 && index < k; freq--) {
+            if (buckets[freq] != null) {
+            for (int num : buckets[freq]) {
+                if (index < k) {
+                result[index++] = num;
+                } else {
+                break;
                 }
-
-                if(c==k) break;
+            }
             }
         }
-        return ans;
+
+        return result;
     }
 }
