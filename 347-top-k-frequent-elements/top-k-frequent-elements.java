@@ -2,21 +2,37 @@ class Solution {
     public int[] topKFrequent(int[] nums, int k) {
         PriorityQueue<int[]> pq = new PriorityQueue<>((a,b)->Integer.compare(b[0],a[0]));//max heap that's why b first
         Map<Integer,Integer> freq = new HashMap<>();
+        int maxFreq = 0;
         for(int i:nums){
             if(freq.containsKey(i)){
-                freq.put(i,freq.get(i)+1);
+                int currFreq = freq.get(i)+1;
+                freq.put(i,currFreq);
+                maxFreq = Math.max(maxFreq,currFreq);
             }else{
                 freq.put(i,1);
+                maxFreq = Math.max(maxFreq,1);
             }
         }
 
+        ArrayList[] bucket = new ArrayList[maxFreq+1];
         for(Map.Entry<Integer,Integer> e: freq.entrySet()){
-            pq.add(new int[]{e.getValue(),e.getKey()});//frequency is the main value for priority queue
+            int f = e.getValue();
+            int num = e.getKey();
+
+            if(bucket[f]==null) bucket[f] = new ArrayList<Integer>();
+
+            bucket[f].add(num);
         }
         
+        
         int[] ans = new int[k];
-        for(int i=0;i<k;i++){
-            ans[i] = pq.poll()[1];
+        for(int i=maxFreq, c=0;i>=0 || c<k;i--){
+            if(bucket[i]!=null){
+                for(int n:(ArrayList<Integer>)bucket[i]){
+                    if(c < k)
+                        ans[c++] = n;
+                }
+            }
         }
         return ans;
     }
