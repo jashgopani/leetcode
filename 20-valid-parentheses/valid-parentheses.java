@@ -9,9 +9,7 @@ class Solution {
 
         for(char c:s.toCharArray()){
             if(pair.containsKey(c)) stack.push(c);
-            else{
-                if(stack.empty() || pair.get(stack.pop())!=c) return false;
-            }
+            else if(stack.empty() || pair.get(stack.pop())!=c) return false;
         }
 
         return stack.empty();
