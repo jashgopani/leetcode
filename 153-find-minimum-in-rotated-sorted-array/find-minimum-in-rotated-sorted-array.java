@@ -7,8 +7,9 @@ class Solution {
             if(a[r] > a[l]){
                 //normal binary search
                 return a[l];
-            }else{
-                //detect which sub array we are in
+            }else{//detect which sub array we are in
+                
+                //breaking point of rotated array
                 if(m+1 < a.length && a[m] > a[m+1]){
                     return a[m+1];
                 }
@@ -17,10 +18,9 @@ class Solution {
                     return a[m];
                 }
 
-                //we are in right sub array
-                if(a[m] < a[l]){
+                if(a[m] < a[l]){//m is in right sub array, means that min element is towards left
                     r = m - 1;
-                }else{
+                }else{ //m is in left sub array, means that the min element would be towards right
                     l = m + 1;
                 }
             }
