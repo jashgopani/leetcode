@@ -10,40 +10,30 @@
  */
 class Solution {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-        ListNode p1 = list1, p2 = list2, p3=null;
-        ListNode newHead = null;
+        if(null==list1) return list2;
+        if(null==list2) return list1;
+        
+        ListNode dummy = new ListNode(0);
+        ListNode tail = dummy;
 
-        while(null!=p1 || null!=p2){
-            ListNode temp = null;
-            // System.out.println(String.format("p1 = %s, p2 = %s, p3 = %s",print(p1), print(p2), print(p3)));
-            if(null!=p1 && null!=p2){
-                if(p1.val <= p2.val){
-                    temp = p1;
-                    p1 = p1.next;
-                }else{
-                    temp = p2;
-                    p2 = p2.next;
-                }
-            }else if(p1==null){
-                temp = p2;
-                p2 = p2.next;
+        while(null!=list1 && null!=list2){
+            if(list1.val < list2.val){
+                tail.next = list1;
+                list1 = list1.next;
             }else{
-                temp = p1;
-                p1 = p1.next;
+                tail.next = list2;
+                list2 = list2.next;
             }
-
-            // System.out.println("\t temp = "+print(temp));
-
-            if(null==newHead){
-                newHead = new ListNode(temp.val);
-                p3 = newHead;
-            }else{
-                p3.next = new ListNode(temp.val);
-                p3 = p3.next;
-            }
+            tail = tail.next;
         }
 
-        return newHead;
+        if(null!=list1){
+            tail.next = list1;
+        }else{
+            tail.next = list2;
+        }
+
+        return dummy.next;
     }
 
     public String print(ListNode node){
