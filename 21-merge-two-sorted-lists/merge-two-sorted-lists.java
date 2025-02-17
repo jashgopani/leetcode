@@ -10,9 +10,6 @@
  */
 class Solution {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-        if(null==list1) return list2;
-        if(null==list2) return list1;
-        
         ListNode dummy = new ListNode(0);
         ListNode tail = dummy;
 
@@ -34,9 +31,5 @@ class Solution {
         }
 
         return dummy.next;
-    }
-
-    public String print(ListNode node){
-        return (null==node)?null:""+node.val;
     }
 }
