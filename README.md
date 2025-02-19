@@ -75,6 +75,7 @@
 - [653-two-sum-iv-input-is-a-bst](./653-two-sum-iv-input-is-a-bst)
 - [733-flood-fill](./733-flood-fill)
 - [739-daily-temperatures](./739-daily-temperatures)
+- [747-min-cost-climbing-stairs](./747-min-cost-climbing-stairs)
 - [792-binary-search](./792-binary-search)
 - [854-making-a-large-island](./854-making-a-large-island)
 - [874-backspace-string-compare](./874-backspace-string-compare)
@@ -94,4 +95,4 @@
 - [3309-count-prefix-and-suffix-pairs-i](./3309-count-prefix-and-suffix-pairs-i)
 - [3501-delete-nodes-from-linked-list-present-in-array](./3501-delete-nodes-from-linked-list-present-in-array)
 ---
-**Last Updated**: 2025-02-18 18:41:54
+**Last Updated**: 2025-02-19 15:26:58
