@@ -15,17 +15,19 @@
  */
 class Solution {
     public boolean isBalanced(TreeNode root) {
-        return dfs(root)[0]==1;
+        return checkHeight(root) > -1 ;
     }
 
-    public int[] dfs(TreeNode root){
-        if(root==null){
-            return new int[]{1,0};
-        }
+    public int checkHeight(TreeNode root){
+       //height diff of both subtrees should not be more than 1
 
-        int [] left = dfs(root.left);
-        int [] right = dfs(root.right);
-        int balanced = (left[0] == 1 && right[0]==1 && Math.abs(left[1]-right[1]) <= 1)? 1 : -1;
-        return new int[]{balanced, 1+Math.max(left[1],right[1])};
+       if(null==root) return 0;
+
+       int lh = checkHeight(root.left);
+       if(lh == -1) return -1; //if left subtree is imbalanced, return from here, no need to check right subtree
+       int rh = checkHeight(root.right);
+       if(rh == -1) return -1; 
+
+       return (Math.abs(lh-rh) > 1)? -1 :Math.max(lh,rh) + 1;
     }
 }
