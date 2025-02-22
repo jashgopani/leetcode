@@ -18,35 +18,31 @@ class Solution {
         List<List<Integer>> res = new ArrayList<>();
         if(root==null) return res;
 
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.add(root);
+        Deque<TreeNode> queue = new ArrayDeque<>();
+        queue.addFirst(root);
 
         while(!queue.isEmpty()){
             boolean ltr = res.size() % 2 == 0;
             int len = queue.size();
-
             List<Integer> level = new ArrayList<>();
-            Stack<Integer> stack = new Stack<>();
-
             for(int i=0;i<len;i++){
-                TreeNode curr = queue.poll();
-
-                if(curr!=null){
-                    if(ltr) level.add(curr.val);
-                    else stack.push(curr.val);
-
-                    queue.add(curr.left);
-                    queue.add(curr.right);
+                if (ltr) {
+                    TreeNode node = queue.pollFirst();
+                    level.add(node.val);
+                    if (node.left != null) queue.offerLast(node.left);
+                    if (node.right != null) queue.offerLast(node.right);
+                } else {
+                    TreeNode node = queue.pollLast();
+                    level.add(node.val);
+                    if (node.right != null) queue.offerFirst(node.right);
+                    if (node.left != null) queue.offerFirst(node.left);
                 }
-            }
-
-            if(!ltr){
-                while(!stack.isEmpty()) level.add(stack.pop());
             }
 
             if(!level.isEmpty()){
                 res.add(level);
             }
+            // System.out.println("ltr: "+ltr+" | "+queue);
         }
 
         return res;
