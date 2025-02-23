@@ -55,6 +55,7 @@
 - [200-number-of-islands](./200-number-of-islands)
 - [202-happy-number](./202-happy-number)
 - [206-reverse-linked-list](./206-reverse-linked-list)
+- [207-course-schedule](./207-course-schedule)
 - [208-implement-trie-prefix-tree](./208-implement-trie-prefix-tree)
 - [210-course-schedule-ii](./210-course-schedule-ii)
 - [213-house-robber-ii](./213-house-robber-ii)
@@ -102,4 +103,4 @@
 - [3309-count-prefix-and-suffix-pairs-i](./3309-count-prefix-and-suffix-pairs-i)
 - [3501-delete-nodes-from-linked-list-present-in-array](./3501-delete-nodes-from-linked-list-present-in-array)
 ---
-**Last Updated**: 2025-02-22 21:10:23
+**Last Updated**: 2025-02-22 21:31:57
