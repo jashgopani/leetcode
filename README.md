@@ -34,6 +34,7 @@
 - [102-binary-tree-level-order-traversal](./102-binary-tree-level-order-traversal)
 - [103-binary-tree-zigzag-level-order-traversal](./103-binary-tree-zigzag-level-order-traversal)
 - [104-maximum-depth-of-binary-tree](./104-maximum-depth-of-binary-tree)
+- [105-construct-binary-tree-from-preorder-and-inorder-traversal](./105-construct-binary-tree-from-preorder-and-inorder-traversal)
 - [110-balanced-binary-tree](./110-balanced-binary-tree)
 - [121-best-time-to-buy-and-sell-stock](./121-best-time-to-buy-and-sell-stock)
 - [124-binary-tree-maximum-path-sum](./124-binary-tree-maximum-path-sum)
@@ -100,4 +101,4 @@
 - [3309-count-prefix-and-suffix-pairs-i](./3309-count-prefix-and-suffix-pairs-i)
 - [3501-delete-nodes-from-linked-list-present-in-array](./3501-delete-nodes-from-linked-list-present-in-array)
 ---
-**Last Updated**: 2025-02-22 16:32:30
+**Last Updated**: 2025-02-22 19:55:29
