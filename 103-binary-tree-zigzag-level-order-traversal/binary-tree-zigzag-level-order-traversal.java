@@ -26,16 +26,22 @@ class Solution {
             int len = queue.size();
             List<Integer> level = new ArrayList<>();
             for(int i=0;i<len;i++){
-                if (ltr) {
-                    TreeNode node = queue.pollFirst();
-                    level.add(node.val);
-                    if (node.left != null) queue.offerLast(node.left);
-                    if (node.right != null) queue.offerLast(node.right);
-                } else {
-                    TreeNode node = queue.pollLast();
-                    level.add(node.val);
-                    if (node.right != null) queue.offerFirst(node.right);
-                    if (node.left != null) queue.offerFirst(node.left);
+                TreeNode node = ltr?queue.poll():queue.pollLast();
+                level.add(node.val);
+
+                if(ltr){
+                    /**
+                    * When I am on even level, I want my left child to be in the leftmost position in the queue, hence we use addLast to insert elements. Like a stack growing in left to right direction
+                    **/
+                    if(node.left!=null)queue.addLast(node.left);
+                    if(node.right!=null)queue.addLast(node.right);
+                }else{
+                    //when I am at odd level, I am already starting from right end
+                    //so I need to push chilren in the queue such that the rightmost child, is at the rightmost position in the queue
+                    //hence we use addFirst to use the deque like a stack growing in right to left direction
+                    if(node.right!=null)queue.addFirst(node.right);
+                    if(node.left!=null)queue.addFirst(node.left);
+
                 }
             }
 
