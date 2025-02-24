@@ -46,6 +46,7 @@
 - [150-evaluate-reverse-polish-notation](./150-evaluate-reverse-polish-notation)
 - [153-find-minimum-in-rotated-sorted-array](./153-find-minimum-in-rotated-sorted-array)
 - [155-min-stack](./155-min-stack)
+- [160-intersection-of-two-linked-lists](./160-intersection-of-two-linked-lists)
 - [167-two-sum-ii-input-array-is-sorted](./167-two-sum-ii-input-array-is-sorted)
 - [169-majority-element](./169-majority-element)
 - [173-binary-search-tree-iterator](./173-binary-search-tree-iterator)
@@ -103,4 +104,4 @@
 - [3309-count-prefix-and-suffix-pairs-i](./3309-count-prefix-and-suffix-pairs-i)
 - [3501-delete-nodes-from-linked-list-present-in-array](./3501-delete-nodes-from-linked-list-present-in-array)
 ---
-**Last Updated**: 2025-02-23 22:59:36
+**Last Updated**: 2025-02-24 11:41:51
